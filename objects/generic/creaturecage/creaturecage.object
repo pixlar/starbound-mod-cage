@@ -1,0 +1,38 @@
+{
+  "objectName" : "creaturecage",
+  "rarity" : "Common",
+  "objectType" : "container",
+  "tooltipKind" : "container",
+
+  "category" : "storage",
+  "price" : 500,
+  "description" : "It can hold a captured creature for display.",
+  "shortdescription" : "Creature Cage",
+  "race" : "generic",
+
+  "apexDescription" : "It can hold a captured creature for display.",
+  "avianDescription" : "It can hold a captured creature for display.",
+  "floranDescription" : "It can hold a captured creature for display.",
+  "glitchDescription" : "It can hold a captured creature for display.",
+  "humanDescription" : "It can hold a captured creature for display.",
+  "hylotlDescription" : "It can hold a captured creature for display.",
+
+  "inventoryIcon" : "techchesticon.png",
+  "orientations" : [
+    {
+      "dualImage" : "techchest.png:<color>.<key>",
+      "imagePosition" : [-8, 0],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+
+  ],
+
+  "openSounds" : [ "/sfx/objects/chest_small_open.wav" ],
+  "closeSounds" : [ "/sfx/objects/chest_small_close.wav" ],
+  "slotCount" : 16,
+  "uiConfig" : "/interface/chests/chest%slots%.config",
+  "frameCooldown" : 5,
+  "autoCloseCooldown" : 3600
+}

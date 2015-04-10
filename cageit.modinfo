@@ -1,0 +1,12 @@
+{
+"name" : "creaturecage",
+"version" : "Beta v. Upbeat Giraffe",
+"path" : ".",
+"requires" : [],
+"includes" : [],
+  "metadata" : {
+    "author" : "Pixlar",
+    "version" : "0.0.1",
+    "description" : "Allows you to cage creatures capture in a creature capture pod :P"
+  }
+}
