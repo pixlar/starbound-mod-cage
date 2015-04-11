@@ -32,7 +32,9 @@
   "openSounds" : [ "/sfx/objects/chest_small_open.wav" ],
   "closeSounds" : [ "/sfx/objects/chest_small_close.wav" ],
   "slotCount" : 1,
+  "size" : 1,
   "uiConfig" : "/interface/chests/chest%slots%.config",
+  "scripts" : [ "/objects/generic/creaturecage/creaturecageobject.lua" ],
   "frameCooldown" : 5,
   "autoCloseCooldown" : 3600
 }

@@ -5,5 +5,5 @@
     { "item" : "money", "count" : 100 }
   ],
   "output" : { "item" : "creaturecage", "count" : 1 },
-  "groups" : [ "ironcraftingtable", "objects", "tools", "all" ]
+  "groups" : [ "ironcraftingtable", "objects", "tools", "all", "mod" ]
 }
