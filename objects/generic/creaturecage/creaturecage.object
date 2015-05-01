@@ -10,12 +10,12 @@
   "shortdescription" : "Creature Cage",
   "race" : "generic",
 
-  "apexDescription" : "A high-tech chest. It looks as if it might contain something valuable.",
-  "avianDescription" : "A chest that looks like it stores something valuable.",
-  "floranDescription" : "Sspecial sshiny chesst.",
-  "glitchDescription" : "Non-committal. This chest is of unknown origin.",
-  "humanDescription" : "Who made this? What's in it?",
-  "hylotlDescription" : "There is amazing technology built into the chest itself.",
+  "apexDescription" : "A CreatureCage for caging creatures",
+  "avianDescription" : "A CreatureCage for caging creatures",
+  "floranDescription" : "A CreatureCage for caging creatures.",
+  "glitchDescription" : "A CreatureCage for caging creatures",
+  "humanDescription" : "A CreatureCage for caging creatures",
+  "hylotlDescription" : "A CreatureCage for caging creatures",
 
   "inventoryIcon" : "creaturecageicon.png",
   "orientations" : [
@@ -33,8 +33,9 @@
   "closeSounds" : [ "/sfx/objects/chest_small_close.wav" ],
   "slotCount" : 1,
   "size" : 1,
-  "uiConfig" : "/interface/chests/chest%slots%.config",
-  "scripts" : [ "/objects/generic/creaturecage/creaturecageobject.lua" ],
+  "monsterDisplayed" : 0,
+  "uiConfig" : "/interface/chests/cage.config",
+  "scripts" : [ "/objects/generic/creaturecage/creaturecagedisplay.lua" ],
   "frameCooldown" : 5,
   "autoCloseCooldown" : 3600
 }
