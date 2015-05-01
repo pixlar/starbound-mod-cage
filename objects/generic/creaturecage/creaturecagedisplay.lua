@@ -1,6 +1,8 @@
 function init(args)
 	world.logInfo("cage exists")
-	cagedCreature = nil
+	if not (type(cagedCreature) == "nil") then 
+		world.logInfo("I know my creature")
+	end
 end
 
 function update(args)
@@ -8,12 +10,13 @@ function update(args)
 	storedCreature = loadStoredCreature()
 	if storedCreature == nil then
 		world.logInfo("the cage is empty")
-		if not cagedCreature == nil then 
+		world.logInfo( type(cagedCreature) )
+		if not (type(cagedCreature) == "nil") then 
 			cagedCreature = removeCagedCreature()
 		end
 	elseif not compareCreatures(cagedCreature, storedCreature) then
-		cagedCreature = removeCagedCreature()
-		cagedCreature = spawnDisplay()
+		cagedCreature = removeCagedCreature(cagedCreature)
+		cagedCreature = spawnDisplay(storedCreature)
 	end
 end
 
@@ -56,14 +59,14 @@ function compareCreatures(cagedCreature, storedCreature)
 	return match
 end
 
-function spawnDisplay()
-	--cagedCreature = storedCreature
+function spawnDisplay(creature)
 	world.logInfo("**************spawn creature display*************")
+	--world.spawnMonster(creature["type"], {entity.position()[1], entity.position()[2] + 1}, creature["arguments"])
 	--world.logInfo( cagedCreature["arguments"]["seed"] )
-	return storedCreature
+	return creature
 end
 
-function removeCagedCreature()
+function removeCagedCreature(cagedCreature)
 	world.logInfo("--------destroyed creature display-----------")
 	return nil
 end
