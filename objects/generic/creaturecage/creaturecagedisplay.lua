@@ -2,7 +2,7 @@ function init(args)
 	--world.logInfo("cage exists")
 	self.initialized = false
 	if storage.monsterReference ~= nil then 
-		world.logInfo("I know my creature")
+		--world.logInfo("I know my creature")
 	else
 		--world.logInfo("I do not know my creature")
 	end
@@ -13,9 +13,9 @@ function update(args)
 		if storage.monsterReference ~= nil then
 			monsters = world.monsterQuery(entity.position(), 10, { order = "nearest" })
 			for i,v in ipairs(monsters) do
-				world.logInfo(i)
-				world.logInfo(type(v))
-				world.logInfo("==============")
+				--world.logInfo(i)
+				--world.logInfo(type(v))
+				--world.logInfo("==============")
 			end
 			if monsters[1] ~= nil then
 				self.initialized = true
@@ -32,21 +32,21 @@ function update(args)
 		--world.logInfo("the cage is empty")
 		--world.logInfo( type(storage.monsterConfig) )
 		if storage.monsterConfig ~= nil then 
-			world.logInfo("get rid of this")
+			--world.logInfo("get rid of this")
 			removeCagedCreature()
 		end
 		
 	elseif not compareCreatures(storage.monsterConfig, heldCreature) then
-		world.logInfo("new creature")
+		--world.logInfo("new creature")
 		removeCagedCreature()
 		storage.monsterConfig = heldCreature
 		storage.monsterReference = spawnDisplay(heldCreature)
-		world.logInfo(storage.monsterReference)
+		--world.logInfo(storage.monsterReference)
 	end
 end
 
 function die()
-	world.logInfo("cage destroyed")
+	--world.logInfo("cage destroyed")
 	storage.monsterConfig = removeCagedCreature(storage.monsterConfig)
 end
 
@@ -81,25 +81,25 @@ function compareCreatures(compCreature, heldCreature)
 		--world.logInfo("creatures match")
 		match = true
 	else
-		world.logInfo("caged creature is not tabled")
-		world.logInfo( type(compCreature) )
+		--world.logInfo("caged creature is not tabled")
+		--world.logInfo( type(compCreature) )
 	end
 	return match
 end
 
 function spawnDisplay(creature)
-	world.logInfo("**************spawn creature display*************")
+	--world.logInfo("**************spawn creature display*************")
 	storage.monsterConfig = creature
-	newCreature = world.spawnMonster(creature["type"], {entity.position()[1], entity.position()[2] + 1}, creature["arguments"])
+	newCreature = world.spawnMonster(creature["type"], {entity.position()[1], entity.position()[2] + 2}, creature["arguments"])
 	--world.logInfo( storage.monsterConfig["arguments"]["seed"] )
-	world.logInfo(newCreature)
+	--world.logInfo(newCreature)
 	return newCreature
 end
 
 function removeCagedCreature()
 	if not (storage.monsterReference == nil) then
-		world.logInfo("--------destroyed creature display-----------")
-		world.logInfo(storage.monsterReference)
+		--world.logInfo("--------destroyed creature display-----------")
+		--world.logInfo(storage.monsterReference)
 		world.callScriptedEntity(storage.monsterReference, "die")
 	end
 	storage.monsterReference = nil

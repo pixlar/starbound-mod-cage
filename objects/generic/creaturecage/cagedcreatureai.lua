@@ -2,6 +2,7 @@ function init()
 	entity.setDropPool(nil)
 	entity.setDeathParticleBurst(nil)
 	entity.setDeathSound(nil)
+	--entity.setGravityEnabled(false)
 	--self.die()
 end
 
