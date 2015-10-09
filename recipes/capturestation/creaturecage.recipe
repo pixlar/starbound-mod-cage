@@ -4,6 +4,9 @@
     { "item" : "ironbar", "count" : 5 },
     { "item" : "money", "count" : 100 }
   ],
-  "output" : { "item" : "creaturecage", "count" : 1 },
-  "groups" : [ "ironcraftingtable", "objects", "tools", "all", "mod" ]
+  "output" : { 
+  	"item" : "creaturecage", 
+  	"count" : 1 
+  },
+  "groups" : [ "capturestation", "all", "mod" ]
 }

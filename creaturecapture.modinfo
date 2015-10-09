@@ -1,0 +1,12 @@
+{
+"name" : "creaturecage",
+"version" : "Beta v. Pleased Giraffe",
+"path" : ".",
+"requires" : [],
+"includes" : [],
+  "metadata" : {
+    "author" : "magewish4",
+    "version" : "0.1.0",
+    "description" : "Allows you to cage creatures captured in a creature capture pod :P"
+  }
+}
