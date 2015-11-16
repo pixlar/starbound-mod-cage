@@ -1,3 +1,5 @@
 [
-{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"creaturecage"}}
+{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"creaturecage"}},
+{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"ironcreaturecage"}},
+{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"coppercreaturecage"}}
 ]

@@ -1,0 +1,50 @@
+{
+  "objectName" : "creatureconsole",
+  "tags" : ["human","humanbunker","electronic","wired"],
+  "rarity" : "Common",
+
+  "category" : "decorative",
+  "price" : 80,
+  "description" : "It's full of really tempting levers but I should probably leave it alone.",
+  "shortdescription" : "Creature Console",
+  "race" : "human",
+
+  "apexDescription" : "A creature command console. It shows creature data.",
+  "avianDescription" : "A creature command console. It shows creature data.",
+  "floranDescription" : "A creature command console. It shows creature data.",
+  "glitchDescription" : "A creature command console. It shows creature data.",
+  "humanDescription" : "A creature command console. It shows creature data.",
+  "hylotlDescription" : "A creature command console. It shows creature data.",
+
+  "inventoryIcon" : "creatureconsoleicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "creatureconsole.png:<color>.<frame>",
+      "imagePosition" : [-8, 0],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ],
+
+  "animation" : "/objects/wired/switch/switch3.animation",
+  "animationCustom" : {
+    "sounds" : {
+      "on" : [ "/sfx/objects/console_generic_switchon.wav" ],
+      "off" : [ "/sfx/objects/console_generic_switchoff.wav" ]
+    }
+  },
+  "animationParts" : {
+    "switch" : "creatureconsole.png"
+  },
+  "animationPosition" : [-8, 0],
+  
+  "inboundNodes" : [ [0, 0] ],
+  
+  "interactAction" : "ScriptConsole",
+  "interactData" : "/objects/generic/captureconsole/captureconsole.config",
+  "scripts" : [ "/objects/generic/captureconsole/creatureconsole.lua" ],
+  
+  "soundEffect" : "/sfx/objects/bunkerconsole.wav"
+}

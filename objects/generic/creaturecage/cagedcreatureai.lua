@@ -6,7 +6,7 @@ function init()
 	--self.die()
 end
 
-function updage(dt)
+function update(dt)
 
 end
 

@@ -1,5 +1,5 @@
 {
-  "objectName" : "creaturecage",
+  "objectName" : "coppercreaturecage",
   "tags" : ["wired", "storage"],
   "rarity" : "Common",
   "objectType" : "container",
@@ -7,8 +7,8 @@
 
   "category" : "storage",
   "price" : 500,
-  "description" : "A Creature Cage.",
-  "shortdescription" : "Creature Cage",
+  "description" : "A Strong Copper Creature Cage.",
+  "shortdescription" : "Copper Creature Cage",
   "race" : "generic",
 
   "apexDescription" : "A CreatureCage for caging creatures",
@@ -18,10 +18,10 @@
   "humanDescription" : "A CreatureCage for caging creatures",
   "hylotlDescription" : "A CreatureCage for caging creatures",
 
-  "inventoryIcon" : "creaturecageicon.png",
+  "inventoryIcon" : "coppercreaturecageicon.png",
   "orientations" : [
     {
-      "dualImage" : "creaturecage.png:<color>.<key>",
+      "dualImage" : "coppercreaturecage.png:<color>.<key>",
       "imagePosition" : [-16, 0],
 
       "spaceScan" : 0.1,
@@ -30,7 +30,9 @@
     }
 
   ],
-
+  
+  "outboundNodes" : [ [0, 0] ],
+  
   "openSounds" : [ "/sfx/objects/chest_small_open.wav" ],
   "closeSounds" : [ "/sfx/objects/chest_small_close.wav" ],
   "slotCount" : 1,

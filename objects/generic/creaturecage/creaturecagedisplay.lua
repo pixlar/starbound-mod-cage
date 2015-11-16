@@ -106,6 +106,10 @@ function removeCagedCreature()
 	storage.monsterConfig = nil
 	return nil
 end
+--
+--function creatureStats
+--	return(storage.monsterConfig)
+--end
 
 --heldCreature refers to creature stored in the capturepod in the cage
 --storage.monsterConfig refers to the display

@@ -1,0 +1,12 @@
+{
+  "input" : [
+    { "item" : "darkwoodmaterial", "count" : 10 },
+    { "item" : "ironbar", "count" : 10 },
+    { "item" : "money", "count" : 100 }
+  ],
+  "output" : { 
+  	"item" : "ironcreaturecage", 
+  	"count" : 1 
+  },
+  "groups" : [ "capturestation", "all", "mod" ]
+}
