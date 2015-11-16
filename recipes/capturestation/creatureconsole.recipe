@@ -1,0 +1,12 @@
+{
+  "input" : [
+    { "item" : "copperbar", "count" : 10 },
+    { "item" : "ironbar", "count" : 10 },
+    { "item" : "money", "count" : 200 }
+  ],
+  "output" : { 
+  	"item" : "creatureconsole", 
+  	"count" : 1 
+  },
+  "groups" : [ "capturestation", "all", "mod" ]
+}
