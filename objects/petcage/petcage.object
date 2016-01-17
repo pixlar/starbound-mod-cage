@@ -1,0 +1,40 @@
+{
+  "objectName" : "petcage",
+  "colonyTags" : ["pet","valuable","storage"],
+  "rarity" : "uncommon",
+  "objectType" : "container",
+  "tooltipKind" : "container",
+
+  "retainObjectParametersInItem" : true,
+
+  "category" : "decorative",
+  "price" : 50,
+  "race" : "generic",
+
+  "description" : "A display for pets",
+  "subtitle" : "  A display for pets",
+  "shortdescription" : "A display for pets",
+
+  "animation" : "/objects/petcage/petcage.animation",
+  "scripts" : ["/objects/petcage/petcage.lua"],
+
+  "inventoryIcon" : "petcageicon.png",
+  "orientations" : [
+    {
+      "imageLayers" : [ { "image" : "/objects/petcage/petcage.png:backComplete"},
+                        { "image" : "/objects/petcage/petcage.png:frontComplete"} ],
+      "imagePosition" : [0, 0],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "collision" : "platform"
+    }
+  ],
+
+  "openSounds" : [ "/sfx/objects/chest_large_open.ogg" ],
+  "closeSounds" : [ "/sfx/objects/chest_large_close.ogg" ],
+  "slotCount" : 1,
+  "uiConfig" : "/objects/petcage/petcage.config",
+  "frameCooldown" : 5,
+  "autoCloseCooldown" : 3600
+}

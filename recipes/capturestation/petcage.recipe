@@ -1,11 +1,11 @@
 {
   "input" : [
-    { "item" : "darkwoodmaterial", "count" : 10 },
-    { "item" : "copperbar", "count" : 10 },
+    { "item" : "darkwoodmaterial", "count" : 25 },
+    { "item" : "ironbar", "count" : 5 },
     { "item" : "money", "count" : 100 }
   ],
   "output" : { 
-  	"item" : "coppercreaturecage", 
+  	"item" : "petcage", 
   	"count" : 1 
   },
   "groups" : [ "capturestation", "all", "mod" ]
